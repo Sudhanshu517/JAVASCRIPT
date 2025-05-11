@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container red bg-green">
+   
+        <div class="box" style="display: flex;" data-createdby = "Sidos" data-conceitby="you">
+            Hey I am a box.
+        </div>
+        <div class="box">
+            Hey I am a box.  
+        </div>
+    </div>
+    <script>
+        // let div = document.createElement("div");
+        // div.innerHTML = "I have been inserted <b>by harry </b>"
+        // div.setAttribute("class", "created");
+        // document.querySelector(".container").append(div);
+        // document.querySelector(".container").before(div);
+        // document.querySelector(".container").after(div);
+        // document.querySelector(".container").prepend(div);
+        //you can use this when you want to put upcomung data in dom without reloading the page.
+        // window.location.href = "https://www.quora.com"; to redirect to another site.
+
+        let cont = document.querySelector(".container");
+        cont.insertAdjacentHTML("afterend", "I am playing football outside")
+
+    </script>
+</body>
+</html>
